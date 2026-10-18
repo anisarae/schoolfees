@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parent Portal - FeeFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar"></div>
+
+    <div class="main-container">
+        <header class="top-header">
+            <div class="page-title">
+                <h1>Parent Dashboard</h1>
+                <p>Monitoring children's fee status and academic updates</p>
+            </div>
+            <div class="header-right" id="header-right"><span id="hdr"></span></div>
+        </header>
+
+        <div class="content-body">
+            <div class="card no-print" id="admin-preview" hidden>
+                <div class="card-header">
+                    <h3>Admin preview</h3>
+                    <div class="toolbar"><span class="muted">View the portal as the parent of:</span><select id="pick"></select></div>
+                </div>
+            </div>
+
+            <div class="welcome-banner">
+                <h2>Child Fee Status Overview</h2>
+                <p>Track school fee balances, payment history, and attendance records for your children in real-time.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header"><h3>My Children Registered</h3></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Admission No.</th><th>Student Name</th><th>Year</th><th>Total Fees</th>
+                            <th>Balance</th><th>Attendance</th><th>Status</th><th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rows"><tr class="empty-row"><td colspan="8">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/parent-portal.js"></script>
+</body>
+</html>

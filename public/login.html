@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login - FeeFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="login-card">
+        <div class="login-header">
+            <h2>FeeFlow</h2>
+            <p>School Management System</p>
+        </div>
+        <div class="login-error" id="error" role="alert"></div>
+        <form id="login-form">
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="username">Email Address / Username</label>
+                <input type="text" id="username" placeholder="admin@feeflow.edu" autocomplete="username" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="btn" id="submit" style="width: 100%; padding: 12px;">Login to Dashboard</button>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

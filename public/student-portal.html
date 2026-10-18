@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Portal - FeeFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar"></div>
+
+    <div class="main-container">
+        <header class="top-header">
+            <div class="page-title">
+                <h1>Student Dashboard</h1>
+                <p>Loading...</p>
+            </div>
+            <div class="header-right" id="header-right"><span id="hdr"></span></div>
+        </header>
+
+        <div class="content-body">
+            <div class="card no-print" id="admin-preview" hidden>
+                <div class="card-header">
+                    <h3>Admin preview</h3>
+                    <div class="toolbar"><span class="muted">View the portal as:</span><select id="pick"></select></div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card"><p id="lbl-total">Total Fees</p><h3 id="p-total">--</h3></div>
+                <div class="stat-card"><p>Paid Amount</p><h3 style="color: #166534;" id="p-paid">--</h3></div>
+                <div class="stat-card"><p>Fee Balance</p><h3 style="color: #991b1b;" id="p-balance">--</h3></div>
+                <div class="stat-card"><p>Attendance Status</p><h3 id="p-att">--</h3><p class="muted" id="p-rate" style="margin: 8px 0 0 0; text-transform: none;"></p></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>My Payment History</h3>
+                    <a class="btn btn-outline" id="btn-statement" href="#">Download Statement</a>
+                </div>
+                <table>
+                    <thead><tr><th>Receipt No.</th><th>Amount Paid</th><th>Payment Mode</th><th>Date</th><th>Action</th></tr></thead>
+                    <tbody id="rows"><tr class="empty-row"><td colspan="5">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/student-portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Students Fees & Payments - FeeFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar"></div>
+
+    <div class="main-container">
+        <header class="top-header">
+            <div class="page-title">
+                <h1>Students Fees & Payments</h1>
+                <p>Manage student financial ledgers and record fee payments</p>
+            </div>
+            <div class="header-right" id="header-right">Academic Year 2026</div>
+        </header>
+
+        <div class="content-body">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Student Fee Records</h3>
+                    <div class="toolbar">
+                        <input type="search" id="search" placeholder="Search name or adm no.">
+                        <button class="btn btn-outline" id="btn-add-student">+ Add Student</button>
+                        <button class="btn" id="btn-record">+ Record Payment</button>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Admission No</th><th>Student Name</th><th>Year</th>
+                            <th>Total Fees</th><th>Paid Amount</th><th>Balance</th><th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rows"><tr class="empty-row"><td colspan="7">Loading...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/students.js"></script>
+</body>
+</html>
